@@ -1,0 +1,21 @@
+CONTROLE MOBILE - VERSAO DE TESTES
+
+WINDOWS
+Abra "Abrir Desktop.cmd", ou execute:
+dist\ControleMobile\ControleMobile.exe
+Mantenha a pasta _internal ao lado do executavel.
+
+ANDROID
+Copie dist\ControleMobile-debug.apk para o celular/tablet e instale.
+O aplicativo precisa ser pareado e autorizado no proprio aparelho.
+
+PARA USAR ENTRE REDES DIFERENTES
+Configure um VPS e um dominio HTTPS seguindo:
+deploy\GUIA-SERVIDOR.md
+Nenhum servidor externo foi contratado/configurado automaticamente.
+
+Depois de configurar, informe a URL e a chave no Windows.
+Gere um codigo em "Parear Android" e informe o codigo no aplicativo Android.
+
+Esta versao ainda precisa ser testada num Android fisico.
+Detalhes e limitacoes: README.md e VALIDACAO.md.
