@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quiz Show · Jogue em tempo real</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/ICS.ico?v=2" type="image/x-icon">
+</head>
+
+<body>
+    <header><a href="/" class="brand">✦ Quiz<span>Show</span></a><div class="header-controls"><button id="sound-toggle" class="secondary" aria-pressed="false" aria-label="Silenciar áudio do jogo">Som: ligado</button><span id="connection">Conectando…</span></div></header>
+    <main id="app"></main>
+    <div id="notice" role="alert"></div>
+    <button id="secret-trigger" aria-label="Abrir surpresa"></button>
+    <dialog id="secret-player" aria-label="Vídeo surpresa">
+        <button id="secret-close" aria-label="Fechar vídeo">×</button>
+        <video id="secret-video" src="/secret-video.mp4" muted loop playsinline preload="none"></video>
+        <audio id="secret-music" src="/secret-music.mp3" preload="none"></audio>
+        <p id="secret-error" role="alert" hidden></p>
+    </dialog>
+    <script src="audio.js"></script>
+    <script src="app.js"></script>
+    <script src="secret.js"></script>
+</body>
+
+</html>
